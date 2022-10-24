@@ -1,0 +1,14 @@
+git init
+git config user.name "username here"
+git config user.email "email here"
+git add *
+ls
+git commit -m "first commit"
+git remote add origin [URL].git
+git remote -v
+git push origin master
+git push --set-u origin master
+git push --set-upstream origin master
+
+git remote add origin(new value. ex. 1) [URL].git
+git push --set-u origin(new value. ex. 1) master
