@@ -1,0 +1,15 @@
+mysql /opt/lampp/lampp start
+mysql /opt/lampp/lampp restart //important
+mysql /opt/lampp/lampp stop
+mysql --version
+service mysql start
+service mysql stop //important
+
+mysql -u root -p -h 127.0.0.1<enter>
+password:<enter>
+
+or
+
+mysql -u root -p -h localhost<enter>
+password:<enter>
+

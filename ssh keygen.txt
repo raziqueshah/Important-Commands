@@ -1,0 +1,39 @@
+1.check rsa and rsa_pub in local system:
+
+  ls ~/.ssh
+
+2.if not create keygen:
+
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+enter
+enter
+enter
+
+3.check rsa and rsa_pub in local system:
+
+ls ~/.ssh
+ls -a -l ~/.ssh
+
+4.add private key to system using runnig agent of ssh:
+
+eval "$(ssh-agent -s)"
+
+5. Add private key to system:
+
+ssh-add ~/.ssh/id_rsa
+
+6.generate public key:
+
+cat ~/.ssh/id_rsa.pub
+enter
+
+7.Add public key to github:
+
+copy generated pub key and paste to the github key and add
+
+8. check connection is secure or not:
+
+ssh -T git@github.com
+enter
+yes
+enter
